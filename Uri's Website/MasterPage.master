@@ -18,8 +18,8 @@
 		</section>
 			
 		<nav class="main_nav">   	
-			<a href="Default.aspx">דף בית</a>
-			<a href="Page1.aspx">דף 1</a>				
+			<a href="Default.aspx"> Home page </a>		
+			<a href="Cyber security.aspx"> Whats Cyber security? </a>
 		</nav>
 	</header>
 		
