@@ -14,7 +14,7 @@
         Without proper protection, personal information such as passwords and private data can be exposed or stolen.</p>
     <h2> What You’ll Learn </h2>
     <ol> 
-        <li> How to create strong passwords </li>
+        <li> How to create strong passwords </li> 
         <li> Common cyber threats </li>
         <li> Safe browsing habits </li>
         <li> Basic ways to protect your data </li>
