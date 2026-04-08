@@ -16,6 +16,7 @@
     <p> The main goals of cyber security are to protect information and systems through three key principles: confidentiality, integrity, and availability.
         Confidentiality ensures that sensitive information is only accessible to authorized users, integrity ensures that data remains accurate and is not altered or tampered with, and availability ensures that systems and data are accessible when needed.
         Together, these principles help maintain the security and reliability of digital information and services.</p>
+    <img src="Images/5541422.png" width="200" />
     <h2>Who Needs Cyber Security?</h2>
     <p> Essentially, everyone needs cyber security because almost all aspects of modern life involve technology and the internet.
         Individuals rely on it to protect personal accounts and private information, businesses use it to secure customer data and systems, and governments depend on it to protect critical infrastructure and national security.
