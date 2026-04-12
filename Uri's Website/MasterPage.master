@@ -11,8 +11,14 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
     <header>
+
+		<section class="header_date">
+			<asp:Label ID="DateLabel" runat="server"></asp:Label>
+			<asp:Image ID="DayImage" runat="server"/>
+		</section>
+
 		<section class="header_top">				
 				
 		</section>
@@ -37,7 +43,7 @@
 	<footer>
 			תוכן אזור תחתון
 	</footer>
-    </form>
+    
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
 </body>
