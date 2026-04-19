@@ -11,12 +11,13 @@
         You can learn more about what exactly is Cyber security at the <a href="https://www.ncsc.gov.uk/section/about-ncsc/what-is-cyber-security " target="_blank"> National Cyber Security Centre </a>
     </p>
 
-    <img src="Images/Digital-Cyber-Security-PNG-Free-Download.png" width="300" />
+    <img src="Images/8522214.png" width="200"/>
     <h2> Main Goals of Cyber Security </h2>
     <p> The main goals of cyber security are to protect information and systems through three key principles: confidentiality, integrity, and availability.
         Confidentiality ensures that sensitive information is only accessible to authorized users, integrity ensures that data remains accurate and is not altered or tampered with, and availability ensures that systems and data are accessible when needed.
         Together, these principles help maintain the security and reliability of digital information and services.</p>
-    <img src="Images/5541422.png" width="200" />
+    
+    <img src="Images/Digital-Cyber-Security-PNG-Free-Download.png" width="300" />
     <h2>Who Needs Cyber Security?</h2>
     <p> Essentially, everyone needs cyber security because almost all aspects of modern life involve technology and the internet.
         Individuals rely on it to protect personal accounts and private information, businesses use it to secure customer data and systems, and governments depend on it to protect critical infrastructure and national security.

@@ -9,7 +9,8 @@
     <p> In this site you'll learn the basics of Cyber security.
     You will learn what exactly is Cyber security, You'll get familiar with some common cyber threats, get a better understanding of passwords and account security, 
     learn how to safely browse the internet and the basics of encryption and data protection. </p>
-     <img src="Images/8522214.png" width="200"/>
+     
+    <img src="Images/5541422.png" width="200" />
    
     <h2> Why Cyber Security Matters </h2>
     <p> Cyber security is important because we use the internet every day for communication, school, shopping, and more.
@@ -21,7 +22,8 @@
         <li> Safe browsing habits </li>
         <li> Basic ways to protect your data </li>
     </ol>
-     <img src="Images/cyber-security-label-maximum-protection-against-cyber-threats-and-identity-theft-data-protection-png.png" width="300"/>
+    <img src="Images/cyber-security-label-maximum-protection-against-cyber-threats-and-identity-theft-data-protection-png.png" width="220"/>
+    
     <h3> Do your own research! </h3>
     <p> Cyber security is becoming increasingly important as we use the internet for work, school, and social life.
         Learning the basics helps protect your personal information, understand online threats, and use technology safely.

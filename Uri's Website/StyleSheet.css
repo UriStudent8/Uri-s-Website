@@ -1,86 +1,147 @@
-﻿﻿html {
-    direction: rtl;
+﻿/* --- הגדרות כלליות --- */
+html {
+    direction: ltr; /* אנגלית נכתבת משמאל לימין */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E8F0FE; /* רקע תכלת עדין מאוד מסביב לאתר */
+    margin: 0;
+    padding: 0;
 }
 
+/* --- מבנה האתר (Layout) --- */
 header, .center, footer {
-    min-height: 80px;
-    border: 2px solid blue;
+    border: none; /* ביטול כל המסגרות הישנות */
 }
 
 header {
-    background-color: white;
-    margin-bottom: 5px;
-    display:flex;
-    flex-direction: column;
-
+    background-color: #0A2540; /* כחול עמוק */
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .header_top {
-    min-height: 20px;
+    min-height: 40px;
     display: flex;
-    flex: 1;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
 }
 
-
+    /* טיפול ספציפי בתמונת התאריך - שתהיה קטנה וטבועה */
+    .header_top img {
+        width: 25px; /* גודל קטן לאייקון התאריך */
+        height: auto;
+        margin-right: 10px;
+        box-shadow: none !important; /* מוודא שאין צל */
+        border-radius: 0 !important; /* מוודא שאין עיגול פינות */
+    }
 
 .main_nav {
-    background-color: lightgray;
-    min-height: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    background-color: #173A5E; /* כחול ניווט */
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
     .main_nav a {
         text-decoration: none;
-        font-size: 24px;
-        color: darkblue;
-        margin: 10px;
+        font-size: 18px;
+        color: white;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: color 0.3s ease;
     }
 
+        .main_nav a:hover {
+            color: #FF6B6B; /* האדום הבהיר המעולה שלך */
+        }
 
 .center {
-    background-color: lime;
-    margin-bottom: 5px;
     display: flex;
-}
-
-main, aside {
-    min-height: 300px;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
 main {
-    background-color: darkblue;
+    background-color: white; /* רקע לבן נקי לתוכן */
     flex: 4;
-    color: white;
-    padding: 5px 10px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    line-height: 1.6;
+    color: #333;
 }
 
-
 aside {
-    background-color: gray;
+    background-color: #CFE2FF; /* רקע כחול בהיר לצד */
     flex: 1;
-    padding: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 5px solid #FF6B6B; /* פס אדום עליון */
     text-align: center;
 }
 
 footer {
-    background-color: orange;
+    background-color: #0A2540;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 3px solid #FF6B6B; /* פס אדום דק מעל הפוטר */
 }
 
-.header_date {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+/* --- כותרות וטקסט --- */
+h1 {
+    color: #0A2540;
+    border-bottom: 4px solid #FF6B6B; /* קו אדום מתחת לכותרת ראשית */
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-#DateLabel {
-    flex: 1;
+
+
+/* הדגשת מילים חשובות באדום */
+main strong {
+    color: #FF6B6B;
 }
 
-#DayImage {
-    flex: 3;
-    max-width: 220px;
+/* עיצוב רשימות עם מספרים אדומים */
+
+
+   
+    
+
+       
+
+/* קישורים בתוך הטקסט */
+main a {
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    main a:hover {
+        text-decoration: underline;
+    }
+
+/* --- תמונות (PNG טבועות ושקופות) --- */
+img {
+    /* הסרת כל המסגרות והצללים כדי שה-PNG ישתלב חלק */
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: block;
+    margin: 20px auto; /* ממרכז את התמונה */
+    max-width: 100%;
     height: auto;
-
+    /* אפקט הגדלה עדין בריחוף */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+    img:hover {
+        transform: scale(1.08); /* הגדלה קצת יותר מורגשת ומרשימה */
+    }
