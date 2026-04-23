@@ -44,7 +44,16 @@ header {
     align-items: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
 }
+
+    .main_nav .login_logout {
+        margin-right: auto;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
 
     .main_nav a {
         text-decoration: none;
@@ -80,7 +89,6 @@ aside {
     flex: 1;
     padding: 20px;
     border-radius: 8px;
-    border-top: 5px solid #FF6B6B; /* פס אדום עליון */
     text-align: center;
 }
 

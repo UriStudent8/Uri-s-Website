@@ -28,6 +28,7 @@
 			<a href="Cyber security.aspx"> Whats Cyber security? </a>
 			<a href="Threats.aspx"> Common threats </a>
 			<a href="HTSS.aspx"> Stay safe online! </a>
+			<a class="login_logout" ID="LoginLogout" runat="server"></a>
 		</nav>
 	</header>
 		
