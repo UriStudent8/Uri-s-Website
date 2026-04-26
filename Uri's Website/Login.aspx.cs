@@ -20,7 +20,7 @@ public partial class Login : System.Web.UI.Page
             int result = GetUserTypeFromDB(Request.Form["userName"], Request.Form["password"]);
 
             if (result > 0)
-            {
+            { 
                 Session["userName"] = Request.Form["userName"];
                 Session["isLoggedIn"] = true;
 
