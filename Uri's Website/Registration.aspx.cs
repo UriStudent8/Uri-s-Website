@@ -134,6 +134,35 @@ public partial class Registration : System.Web.UI.Page
         // ולהחזיר:
         // return false;
 
+        string ID = idNum.Value;
+
+        bool NoNumbers = false;
+
+        if (ID.Length != 9)
+        {
+            RegistrationResult.InnerText += "ת.ז חייבת להכיל תשעה תווים בלבד.";
+
+            return false;
+        }
+        else
+        {
+            for (int i = 0; i < ID.Length; i++)
+            {
+                // בדיקת קיום אותיות
+                if (ID[i] < '0' || ID[i] > '9')
+                    NoNumbers = true;
+            }
+
+            if (NoNumbers== true)
+            {
+                RegistrationResult.InnerText += "ת.ז חייבת להכיל מספרים בלבד";
+
+                return false;
+            }
+        }
+            
+
+
         return true;
     }
 
@@ -148,7 +177,20 @@ public partial class Registration : System.Web.UI.Page
         // וסיים את הפעולה עם:
         // return false;
 
-        return true;
+        string PhoneNum = phone.Value;
+
+        if (PhoneNum.Length != 10)
+        {
+            RegistrationResult.InnerText += "מספר טלפון חייב להכיל בדיוק 10 תווים";
+        }
+        else if (PhoneNum[0] != '0')
+        {
+            RegistrationResult.InnerText += "מספר טלפון חייב להתחיל בספרה 0";
+        }
+
+        
+
+            return true;
     }
 
     private bool Email_Validation()
