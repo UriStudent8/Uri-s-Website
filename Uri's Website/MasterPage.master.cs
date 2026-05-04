@@ -14,11 +14,13 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             LoginLogout.HRef = "Logout.aspx";
             LoginLogout.InnerText = "Hello: " + Session["userName"] + "  (Logout)";
+            Threats.InnerText = "Common threats";
         }
         else
         {
             LoginLogout.HRef = "Login.aspx";
             LoginLogout.InnerText = "Login";
+            Threats.InnerText = "";
         }
 
         if (!IsPostBack)

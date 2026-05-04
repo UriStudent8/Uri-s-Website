@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -182,15 +183,21 @@ public partial class Registration : System.Web.UI.Page
         if (PhoneNum.Length != 10)
         {
             RegistrationResult.InnerText += "מספר טלפון חייב להכיל בדיוק 10 תווים";
+            return false;
         }
         else if (PhoneNum[0] != '0')
         {
             RegistrationResult.InnerText += "מספר טלפון חייב להתחיל בספרה 0";
+            return false;
+        }
+        else
+        {
+            return true;
         }
 
-        
 
-            return true;
+
+           
     }
 
     private bool Email_Validation()
@@ -205,7 +212,24 @@ public partial class Registration : System.Web.UI.Page
         // במקרה שאחד התנאים לא מתקיים, הוסף הודעת שגיאה מתאימה והחזר:
         // return false;
 
-        return true;
+        String Email = mail.Value;
+
+        int AtIndex = Email.IndexOf("@");
+        int DotIndex = Email.IndexOf('.');
+
+        if (AtIndex == -1 || DotIndex == -1 || DotIndex < AtIndex)
+        {
+            RegistrationResult.InnerText += "אימייל חייב להכיל שטרודל עם נקודה אחריו!"; return false;
+        }
+            
+
+
+        else
+        {
+            return true;
+        }
+            
+        
     }
 
     private bool Approval_Validation()
@@ -221,6 +245,31 @@ public partial class Registration : System.Web.UI.Page
 
     private bool Insert_Into_Database()
     {
+        string dbPath = this.MapPath("App_Data/Database.mdf");
+        DAL dal = new DAL(dbPath);
+
+        string sqlQuery = "SELECT * FROM Users WHERE user_name = '" + userName.Value + "'";
+        DataTable dt = dal.GetDataTable(sqlQuery);
+
+        if (dt.Rows.Count > 0)
+        {
+            RegistrationResult.InnerText = "שם משתמש קיים במערכת. אנא בחר.י שם אחר.";
+            return false;
+        }
+
+        sqlQuery = "INSERT INTO Users VALUES (" +
+        "'" + firstName.Value + "', " +
+        "'" + lastName.Value + "', " +
+        "'" + userName.Value + "', " +
+        "'" + pswd.Value + "', " +
+        "'" + idNum.Value + "'," +
+        "'" + phone.Value + "'," +
+        "'" + mail.Value + "'," +
+        "'" + Request.Form["gender"] + "'," +
+        "'" + DateTime.Now.ToString("yyyy-MM-dd") + "', 0);";
+
+        dal.UpdateDB(sqlQuery);
+
         return true;
     }
 
