@@ -24,17 +24,23 @@
 		</section>
 			
 		<nav class="main_nav">   	
+			<a href="Admin.aspx" id="admin" runat="server"> Admin </a>
 			<a href="Default.aspx"> Home page </a>		
 			<a href="Cyber security.aspx"> Whats Cyber security? </a>
-			<a href="Threats.aspx" id="Threats" runat="server"> Common threats </a>
+			<a href="Threats.aspx"> Common threats </a>
 			<a href="HTSS.aspx"> Stay safe online! </a>
+			<a href="Member.aspx" id="members" runat="server" > Member's page </a>
 			<a class="login_logout" ID="LoginLogout" runat="server"></a>
 		</nav>
 	</header>
 		
 	<section class="center">
 		<aside>
-				תוכן אזור צד
+		<asp:ContentPlaceHolder id="ContentPlaceHolderAside" runat="server">
+
+
+
+        </asp:ContentPlaceHolder>
 		</aside>
 			
 		<main>

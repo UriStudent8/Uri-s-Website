@@ -5,13 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class HTSS : System.Web.UI.Page
+public partial class Member : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
-       
-
+        if (!(bool)Session["isLoggedIn"])
+        {
+            Response.Redirect("Unauthorized.aspx");
+        }
 
     }
 }

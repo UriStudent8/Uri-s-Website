@@ -2,6 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
+    
+</asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
     <h1> Whats Cyber security? </h1>
     <p> so, you hear a lot about cyber security, especially with today's evolving tech. But what exactly is Cyber security? 

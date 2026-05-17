@@ -2,9 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
 
-    <h1> Common Cyber Threats </h1>
+        <h1> Common Cyber Threats </h1>
 <p> As technology advances, so do the methods used by cybercriminals. Understanding common cyber threats is the first step in defending yourself against them. 
     Attackers use various techniques to steal data, hijack systems, or trick individuals into handing over sensitive information. 
     By familiarizing yourself with these dangers, you can spot them before they cause harm. </p>

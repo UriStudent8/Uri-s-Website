@@ -1,19 +1,18 @@
-﻿/* --- הגדרות כלליות --- */
-html {
-    direction: ltr; /* אנגלית נכתבת משמאל לימין */
+﻿html {
+    direction: ltr; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #E8F0FE; /* רקע תכלת עדין מאוד מסביב לאתר */
+    background-color: #E8F0FE; 
     margin: 0;
     padding: 0;
 }
 
-/* --- מבנה האתר (Layout) --- */
+
 header, .center, footer {
-    border: none; /* ביטול כל המסגרות הישנות */
+    border: none; 
 }
 
 header {
-    background-color: #0A2540; /* כחול עמוק */
+    background-color: #0A2540; 
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -27,25 +26,25 @@ header {
     color: white;
 }
 
-    /* טיפול ספציפי בתמונת התאריך - שתהיה קטנה וטבועה */
+
     .header_top img {
-        width: 25px; /* גודל קטן לאייקון התאריך */
+        width: 25px; 
         height: auto;
         margin-right: 10px;
-        box-shadow: none !important; /* מוודא שאין צל */
-        border-radius: 0 !important; /* מוודא שאין עיגול פינות */
+        box-shadow: none !important; 
+        border-radius: 0 !important;
     }
 
 .main_nav {
-    background-color: #173A5E; /* כחול ניווט */
+    background-color: #173A5E; 
     min-height: 45px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    display: flex;
-    align-items: center;
+    position: relative; 
+}
 }
 
     .main_nav .login_logout {
@@ -65,7 +64,7 @@ header {
     }
 
         .main_nav a:hover {
-            color: #FF6B6B; /* האדום הבהיר המעולה שלך */
+            color: #FF6B6B; 
         }
 
 .center {
@@ -75,7 +74,7 @@ header {
 }
 
 main {
-    background-color: white; /* רקע לבן נקי לתוכן */
+    background-color: white; 
     flex: 4;
     padding: 30px;
     border-radius: 8px;
@@ -85,7 +84,7 @@ main {
 }
 
 aside {
-    background-color: #CFE2FF; /* רקע כחול בהיר לצד */
+    background-color: #CFE2FF; 
     flex: 1;
     padding: 20px;
     border-radius: 8px;
@@ -98,13 +97,13 @@ footer {
     text-align: center;
     padding: 20px;
     border-radius: 8px;
-    border-top: 3px solid #FF6B6B; /* פס אדום דק מעל הפוטר */
+    border-top: 3px solid #FF6B6B; 
 }
 
-/* --- כותרות וטקסט --- */
+
 h1 {
     color: #0A2540;
-    border-bottom: 4px solid #FF6B6B; /* קו אדום מתחת לכותרת ראשית */
+    border-bottom: 4px solid #FF6B6B; 
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 20px;
@@ -112,12 +111,11 @@ h1 {
 
 
 
-/* הדגשת מילים חשובות באדום */
 main strong {
     color: #FF6B6B;
 }
 
-/* עיצוב רשימות עם מספרים אדומים */
+
 
 
    

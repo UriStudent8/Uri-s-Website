@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -9,18 +10,26 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        admin.Visible = false;
 
         if ((bool)Session["isLoggedIn"])
         {
             LoginLogout.HRef = "Logout.aspx";
             LoginLogout.InnerText = "Hello: " + Session["userName"] + "  (Logout)";
-            Threats.InnerText = "Common threats";
+            members.Visible = true;
+
+            if ((bool)Session["isAdmin"])
+            {
+
+                admin.Visible = true;
+            }
+            
         }
         else
         {
             LoginLogout.HRef = "Login.aspx";
             LoginLogout.InnerText = "Login";
-            Threats.InnerText = "";
+            members.Visible= false;
         }
 
         if (!IsPostBack)
