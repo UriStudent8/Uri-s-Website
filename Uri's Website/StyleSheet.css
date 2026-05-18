@@ -123,7 +123,7 @@ main strong {
 
        
 
-/* קישורים בתוך הטקסט */
+
 main a {
     color: #FF6B6B;
     text-decoration: none;
@@ -134,20 +134,50 @@ main a {
         text-decoration: underline;
     }
 
-/* --- תמונות (PNG טבועות ושקופות) --- */
+
 img {
-    /* הסרת כל המסגרות והצללים כדי שה-PNG ישתלב חלק */
+    
     border: none;
     box-shadow: none;
     border-radius: 0;
     display: block;
-    margin: 20px auto; /* ממרכז את התמונה */
+    margin: 20px auto; 
     max-width: 100%;
     height: auto;
-    /* אפקט הגדלה עדין בריחוף */
+    
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
     img:hover {
-        transform: scale(1.08); /* הגדלה קצת יותר מורגשת ומרשימה */
+        transform: scale(1.08); 
+
+
     }
+
+.phishing-simulator {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 0.9em; /* מקטין מעט את הטקסט שיתאים הצידה */
+}
+
+.email-container img {
+    width: 100%; /* מבטיח שהתמונה לא תצא מהגבולות */
+    height: auto;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.phishing-simulator button {
+    width: 100%; /* כפתורים אחד מתחת לשני אם ה-aside צר מאוד */
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 0.85em;
+    cursor: pointer;
+
+
+
