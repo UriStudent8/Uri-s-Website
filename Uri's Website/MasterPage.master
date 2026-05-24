@@ -11,8 +11,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <!-- הוספתי את הטופס כאן -->
-    <form id="form1" runat="server">
+    
+    <form id="form1" runat="server"> 
     
         <header>
             <section class="header_date">
@@ -71,6 +71,6 @@
     <asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
 
-    </form> <!-- סגירת הטופס כאן -->
+    </form> 
 </body>
 </html>

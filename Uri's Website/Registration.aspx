@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
 
-    <form runat="server" action="Registration.aspx" method="post">		
+    	
 
 	<label for="firstName">שם פרטי:</label><br>
 	<input runat="server" type="text" id="firstName" name="firstName"/><br/>
@@ -39,7 +39,7 @@
 	<input runat="server" type="checkbox" id = "approval" name = "approval" value="approve"/>מאשר\ת<br/>
 
 	<input type="submit">	
-</form>
+
 
 <div runat="server" id="RegistrationResult"></div>
 

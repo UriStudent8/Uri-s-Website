@@ -4,18 +4,17 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
 
-    <form runat="server" method="post" action="Login.aspx">
+    
        <label for="userName">שם משתמש:</label><br>
        <input type="text" id="userName" name="userName"><br>
        <label for="password">סיסמה:</label><br>
        <input type="password" id="password" name="password">
        <input type="submit" value="Submit">
-    </form>
+  
 
     <br><br>
-<form method="get" action="Registration.aspx">		
-    <input type="submit" value="להרשמה"/>
-</form>
+	
+    <input type="button" value="להרשמה" onclick="window.location.href='Registration.aspx';" />
 
     <div runat="server" id="LoginResult"></div>
 
