@@ -161,11 +161,11 @@ img {
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    font-size: 0.9em; /* מקטין מעט את הטקסט שיתאים הצידה */
+    font-size: 0.9em; 
 }
 
 .email-container img {
-    width: 100%; /* מבטיח שהתמונה לא תצא מהגבולות */
+    width: 100%; 
     height: auto;
     border: 1px solid #eee;
     margin-bottom: 10px;
@@ -173,11 +173,12 @@ img {
 }
 
 .phishing-simulator button {
-    width: 100%; /* כפתורים אחד מתחת לשני אם ה-aside צר מאוד */
+    width: 100%;
     margin-bottom: 5px;
     padding: 8px;
     font-size: 0.85em;
     cursor: pointer;
+}
 
 
 

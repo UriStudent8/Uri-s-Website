@@ -37,14 +37,14 @@
         <section class="center">
             <aside>
                <div class="phishing-simulator">
-                <h4>בוחן פתע: זה פישינג?</h4>
+                <h2>Surprise test! is this message legit or is it phishing?</h2>
                 <div class="email-container">
                     <asp:Image ID="imgEmail" runat="server" Width="100%" />
                 </div>
                 
                 <div class="actions">
-                    <asp:Button ID="btnSafe" runat="server" Text="✅ תקין" OnClick="CheckAnswer_Click" CommandArgument="safe" />
-                    <asp:Button ID="btnFishy" runat="server" Text="❌ חשוד" OnClick="CheckAnswer_Click" CommandArgument="fishy" />
+                    <asp:Button ID="btnSafe" runat="server" Text="✅ Legit" OnClick="CheckAnswer_Click" CommandArgument="safe" />
+                    <asp:Button ID="btnFishy" runat="server" Text="❌ Suspicious" OnClick="CheckAnswer_Click" CommandArgument="fishy" />
                 </div>
 
                 <asp:Panel ID="pnlResult" runat="server" Visible="false" Style="margin-top: 10px;">
@@ -65,7 +65,7 @@
     </section>
             
     <footer>
-            תוכן אזור תחתון
+        &copy; 2026 Cyber Security Web - Talkit Project | Developed by Uri 
     </footer>
     
     <asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
