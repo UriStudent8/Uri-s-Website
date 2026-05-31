@@ -1,7 +1,7 @@
 ﻿html {
-    direction: ltr; 
+    direction: ltr;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #E8F0FE; 
+    background-color: #E8F0FE;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ header, .center, footer {
 }
 
 header {
-    background-color: #0A2540; 
+    background-color: #0A2540;
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -36,14 +36,14 @@ header {
     }
 
 .main_nav {
-    background-color: #173A5E; 
+    background-color: #173A5E;
     min-height: 45px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    position: relative; 
+    position: relative;
 }
 }
 
@@ -74,7 +74,7 @@ header {
 }
 
 main {
-    background-color: white; 
+    background-color: white;
     flex: 4;
     padding: 30px;
     border-radius: 8px;

@@ -76,7 +76,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (Uname.Length < 3 || Uname.Length > 8)
         {
-            RegistrationResult.InnerText += "שם משתמש חייה להכיל בין שלושה לשמונה תווים ";
+            RegistrationResult.InnerText += "שם משתמש חייב להכיל בין שלושה לשמונה תווים.";
             return false;
         }
 
@@ -137,7 +137,7 @@ public partial class Registration : System.Web.UI.Page
 
         string ID = idNum.Value;
 
-        bool NoNumbers = false;
+
 
         if (ID.Length != 9)
         {
@@ -145,23 +145,15 @@ public partial class Registration : System.Web.UI.Page
 
             return false;
         }
-        else
+        for (int i = 0; i < ID.Length; i++)
         {
-            for (int i = 0; i < ID.Length; i++)
+            if (ID[i] < '0' || ID[i] > '9')
             {
-                // בדיקת קיום אותיות
-                if (ID[i] < '0' || ID[i] > '9')
-                    NoNumbers = true;
-            }
-
-            if (NoNumbers== true)
-            {
-                RegistrationResult.InnerText += "ת.ז חייבת להכיל מספרים בלבד";
-
+                RegistrationResult.InnerText += "ת.ז חייבת להכיל מספרים בלבד.";
                 return false;
             }
         }
-            
+
 
 
         return true;
@@ -182,22 +174,28 @@ public partial class Registration : System.Web.UI.Page
 
         if (PhoneNum.Length != 10)
         {
-            RegistrationResult.InnerText += "מספר טלפון חייב להכיל בדיוק 10 תווים";
+            RegistrationResult.InnerText += ".מספר טלפון חייב להכיל בדיוק 10 תווים";
             return false;
         }
         else if (PhoneNum[0] != '0')
         {
-            RegistrationResult.InnerText += "מספר טלפון חייב להתחיל בספרה 0";
+            RegistrationResult.InnerText += ".מספר טלפון חייב להתחיל בספרה 0";
             return false;
         }
-        else
+        for (int i = 0; i < PhoneNum.Length; i++)
         {
-            return true;
+            if (!char.IsDigit(PhoneNum[i]))
+            {
+                RegistrationResult.InnerText += ".מספר טלפון חייב להכיל ספרות בלבד";
+                return false;
+            }
         }
 
+        return true;
 
 
-           
+
+
     }
 
     private bool Email_Validation()
@@ -221,15 +219,12 @@ public partial class Registration : System.Web.UI.Page
         {
             RegistrationResult.InnerText += "אימייל חייב להכיל שטרודל עם נקודה אחריו!"; return false;
         }
-            
 
 
-        else
-        {
-            return true;
-        }
-            
-        
+
+        return true;
+
+
     }
 
     private bool Approval_Validation()
